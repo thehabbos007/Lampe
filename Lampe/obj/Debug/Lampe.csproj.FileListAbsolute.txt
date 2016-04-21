@@ -1,0 +1,32 @@
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Lampe.exe.config
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.csprojResolveAssemblyReference.cache
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.Properties.Resources.resources
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.csproj.GenerateResource.Cache
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Lampe.exe
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Lampe.pdb
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\websocket-sharp.dll
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\websocket-sharp.xml
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.exe
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.pdb
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Lampe.exe.manifest
+D:\Dev\Visual Studio\Lampe\Lampe\bin\Debug\Lampe.application
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.exe.manifest
+D:\Dev\Visual Studio\Lampe\Lampe\obj\Debug\Lampe.application
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Lampe.exe.config
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.exe
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.pdb
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Lampe.exe.manifest
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Lampe.application
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Lampe.exe
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Lampe.pdb
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\websocket-sharp.dll
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\GitSources\Lampe\Lampe\bin\Debug\websocket-sharp.xml
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.csprojResolveAssemblyReference.cache
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.Properties.Resources.resources
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.csproj.GenerateResource.Cache
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.exe.manifest
+D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.application
