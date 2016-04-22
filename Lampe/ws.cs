@@ -6,7 +6,7 @@ namespace Lampe
 {
     public class ws
     {
-        internal Channel SocketDispatcher()
+        internal ws()
         {
             //let socket = new Socket("/ws", {params: {userToken: "123"}})
             //socket.connect()
@@ -35,9 +35,11 @@ namespace Lampe
               .Receive("timeout", (jo) => Console.WriteLine("timeout"))
               ;
 
-            return channel;
+            Channel = channel;
 
         }
+
+        internal Channel Channel;
 
         internal void ReadLoop(Channel channel, String msg)
         {

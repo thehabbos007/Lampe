@@ -26,9 +26,7 @@ namespace Lampe
         private NotifyIcon trayIcon;
         private ContextMenu trayMenu;
 
-        private static ws Dispatcher = new ws();
-
-        public  Channel SocketChannel = Dispatcher.SocketDispatcher();
+        private static ws Socket = new ws();
 
         public SysTrayApp()
         {
@@ -80,7 +78,7 @@ namespace Lampe
             do
             {
                 signaled = waitHandle.WaitOne(TimeSpan.FromSeconds(5));
-                Dispatcher.ReadLoop(SocketChannel, GetActiveWindowTitle());
+                Socket.ReadLoop(Socket.Channel, GetActiveWindowTitle());
                 // ToDo: Something else if desired.
             } while (!signaled);
         }
