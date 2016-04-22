@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace Lampe
 {
-    public class SysTrayApp : Form
+    public class Program : Form
     {
 
         [DllImport("user32.dll")]
