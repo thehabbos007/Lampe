@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uH6Nfa/XOCVsc0vyXXy+0vwLsYi1EmNf54UZ4RzGj6s=</dsig:DigestValue>
+        <dsig:DigestValue>ZbyBLezU1IuPB9PRzGAxssINpF0GAM7NbeukR44qLgI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,22 +77,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Lampe.exe.config" size="184">
+  <file name="Lampe.exe.config" size="189">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jWVCngsqgsEdPtxOoE7SAK7f6h1++LmE6IqOl8/1R3A=</dsig:DigestValue>
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Phoenix\Phoenix.csproj" size="3202">
+  <file name="Phoenix\Phoenix.csproj" size="3271">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2F8bTKtZHcGxaHU8+BZQiafh8D+rf+IIGzG7CsdGYDM=</dsig:DigestValue>
+      <dsig:DigestValue>fEfDy0l5RdqkC3fjdzX3wB3o7Byya+QufGSV399Rt68=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

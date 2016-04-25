@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace Lampe
 {
-    public class SysTrayApp : Form
+    public class Lampe: Form
     {
 
         [DllImport("user32.dll")]
@@ -20,7 +20,7 @@ namespace Lampe
         [STAThread]
         public static void Main()
         {
-            Application.Run(new SysTrayApp());
+            Application.Run(new Lampe());
         }
 
         private NotifyIcon trayIcon;
@@ -28,12 +28,12 @@ namespace Lampe
 
         private static ws Socket = new ws();
 
-        public SysTrayApp()
+        public Lampe()
         {
             // Create a simple tray menu with only one item.
             trayMenu = new ContextMenu();
             trayMenu.MenuItems.Add("Exit", OnExit);
-            trayMenu.MenuItems.Add("Send essage", SocketMessage);
+            trayMenu.MenuItems.Add("Send message", SocketMessage);
 
             // Create a tray icon. In this example we use a
             // standard system icon for simplicity, but you
