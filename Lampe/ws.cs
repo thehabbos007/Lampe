@@ -11,17 +11,19 @@ namespace Lampe
             //let socket = new Socket("/ws", {params: {userToken: "123"}})
             //socket.connect()
             var p = new JObject();
+            p["user"] = "s";
             var options = new SocketOptions()
             {
                 LogCallback = Logger,
                 Params = p,
             };
-            var socket = new Socket("ws://192.168.1.43:4000/socket", options);
+            var socket = new Socket("ws://10.48.211.25:4000/socket", options);
             socket.Connect();
 
             //let channel = socket.channel("rooms:123", { token: roomToken})
             //channel.on("new_msg", msg => console.log("Got message", msg) )
             var data = new JObject();
+
             var channel = socket.Channel("rooms:lobby", data);
             channel.On("new_msg", (jo, x) => Console.WriteLine($"new_msg { jo.ToString() }"));
 
@@ -53,5 +55,6 @@ namespace Lampe
         {
             Console.WriteLine($"{kind} - {msg}");
         }
+
     }
 }
