@@ -16,7 +16,7 @@ namespace Lampe
                 LogCallback = Logger,
                 Params = p,
             };
-            var socket = new Socket("ws://192.168.1.43:4000/socket", options);
+            var socket = new Socket("ws://localhost:4000/socket", options);
             socket.Connect();
 
             //let channel = socket.channel("rooms:123", { token: roomToken})
