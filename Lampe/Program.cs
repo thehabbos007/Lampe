@@ -20,7 +20,7 @@ namespace Lampe
         [STAThread]
         public static void Main()
         {
-            Application.Run(new SysTrayApp());
+            Application.Run(new Program());
         }
 
         private NotifyIcon trayIcon;
@@ -28,7 +28,7 @@ namespace Lampe
 
         private static ws Socket = new ws();
 
-        public SysTrayApp()
+        public Program()
         {
             // Create a simple tray menu with only one item.
             trayMenu = new ContextMenu();
