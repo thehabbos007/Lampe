@@ -5,6 +5,8 @@ using System.Windows.Forms;
 using System.Text;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Windows.Automation;
+using System.Diagnostics;
 
 namespace Lampe
 {
@@ -28,12 +30,15 @@ namespace Lampe
 
         private static ws Socket = new ws();
 
+        private AutomationFocusChangedEventHandler focusHandler = null;
+
         public Lampe()
         {
             // Create a simple tray menu with only one item.
             trayMenu = new ContextMenu();
             trayMenu.MenuItems.Add("Exit", OnExit);
-            trayMenu.MenuItems.Add("Send message", SocketMessage);
+            trayMenu.MenuItems.Add("Send message 2", SocketMessage);
+
 
             // Create a tray icon. In this example we use a
             // standard system icon for simplicity, but you
@@ -45,6 +50,46 @@ namespace Lampe
             // Add menu to tray icon and show it.
             trayIcon.ContextMenu = trayMenu;
             trayIcon.Visible = true;
+        }
+
+        private void SocketMessage(object sender, EventArgs e)
+        {
+            focusHandler = new AutomationFocusChangedEventHandler(OnFocusChange);
+            Automation.AddAutomationFocusChangedEventHandler(focusHandler);
+        }
+        private void OnFocusChange(object src, AutomationFocusChangedEventArgs e)
+        {
+            // TODO Add event handling code.
+            // The arguments tell you which elements have lost and received focus.
+            AutomationElement element = src as AutomationElement;
+            if (element != null)
+            {
+
+                int processId = element.Current.ProcessId;
+                using (Process process = Process.GetProcessById(processId))
+                {
+                    if (db.Lookup(process.ProcessName))
+                    {
+                        //process.
+                        Console.WriteLine(process.ProcessName);
+                        Socket.ReadLoop(Socket.Channel, "yes");
+
+                    }
+                    else {
+                        Socket.ReadLoop(Socket.Channel, "no");
+                    }
+
+                }
+            }
+
+        }
+
+        public void UnsubscribeFocusChange()
+        {
+            if (focusHandler != null)
+            {
+                Automation.RemoveAutomationFocusChangedEventHandler(focusHandler);
+            }
         }
 
         protected override void OnLoad(EventArgs e)
@@ -60,34 +105,6 @@ namespace Lampe
             Application.Exit();
         }
 
-        private void SocketMessage (object sender, EventArgs e)
-        {
-            bool createdNew;
-            var waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset, "A29DE0E8-104E-4330-84D5-1A1C2422DD74", out createdNew);
-            var signaled = false;
-
-            if (!createdNew)
-            {
-                waitHandle.Set();
-                return;
-            }
-
-            var timer = new System.Threading.Timer(OnTimerElapsed, null, TimeSpan.Zero, TimeSpan.FromSeconds(10));
-
-            // Wait if someone tells us to die or do every five seconds something else.
-            do
-            {
-                signaled = waitHandle.WaitOne(TimeSpan.FromSeconds(5));
-                Socket.ReadLoop(Socket.Channel, GetActiveWindowTitle());
-                // ToDo: Something else if desired.
-            } while (!signaled);
-        }
-
-        private void OnTimerElapsed(object state)
-        {
-            Console.WriteLine("Time elapsed");
-        }
-
         protected override void Dispose(bool isDisposing)
         {
             if (isDisposing)
@@ -99,17 +116,5 @@ namespace Lampe
             base.Dispose(isDisposing);
         }
 
-        private string GetActiveWindowTitle()
-        {
-            const int nChars = 256;
-            StringBuilder Buff = new StringBuilder(nChars);
-            IntPtr handle = GetForegroundWindow();
-
-            if (GetWindowText(handle, Buff, nChars) > 0)
-            {
-                return Buff.ToString();
-            }
-            return null;
-        }
     }
 }

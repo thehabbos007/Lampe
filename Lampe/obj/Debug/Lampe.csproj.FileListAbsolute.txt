@@ -31,8 +31,6 @@ D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.csproj.GenerateResource.Cache
 D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.exe.manifest
 D:\Dev\GitSources\Lampe\Lampe\obj\Debug\Lampe.application
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\Lampe.exe.config
-C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.exe
-C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.pdb
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\Lampe.exe.manifest
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\Lampe.application
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\Lampe.exe
@@ -46,3 +44,13 @@ C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.Properties.Resources.res
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.csproj.GenerateResource.Cache
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.exe.manifest
 C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.application
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.exe
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\obj\Debug\Lampe.pdb
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\EntityFramework.dll
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\EntityFramework.xml
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ahmad\Source\Repos\Lampe\Lampe\bin\Debug\System.Data.SQLite.xml
